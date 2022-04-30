@@ -1,35 +1,101 @@
-.currentRead{
-    border: 3px solid black;
+
+.menu{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
     display: flex;
-    align-items: left;
     justify-content: center;
+    align-items: center;
+    border: solid black;
 }
 
-
-.list{
-    border: 3px solid black;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-}
-
-button{
-
-    background-color: purple;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+.bookbtn{
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color:white;
+    margin-top: 10px;
+    display: inline-block;
     cursor: pointer;
-    width: 80%;
-
+ 
 }
 
-/* Add a hover effect for buttons */
-button:hover {
-    opacity: 0.8;
+.submit{
+    background-color: purple;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 28px;
+    color:white;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+  .bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.modal-content{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+}
+
+.search-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.searchmodal-content{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position:relative;
+}
+
+
+
+
+  input{
+      width: 50%;
+      display: block;
+      margin: 15px auto;
   }
 
-  .container {
-    padding: 16px;
+  .close{
+      position:absolute;
+      top: 0;
+      right: 14px;
+      font-size: 40px;
+      transform: rotate(45deg);
+      cursor: pointer;
   }
+

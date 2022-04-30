@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href = "nav.css" type = "text/css" rel = "stylesheet" />
+    <link href = "imageslider.css" type = "text/css" rel = "stylesheet" />
+    <script src="slideshow.js"></script>
     <link href = "list.css" type = "text/css" rel = "stylesheet" />
+
 </head>
 <body>
 
-    <div class="currentRead">
-        Currently Reading
-        <ul>
-            <li>Book1</li>
-            <li>Book2</li>
-            <li>Book3</li>
-            <li>Book4</li>
-            <li>Book5</li>
-        </ul>
+    <ul>
+        <h1>Currently Reading</h1>
+        <li>Book1</li>
+        <li>Book2</li>
+        <li>Book3</li>
+    </ul>
+    <section class = "menu">
+        <div class="menu content">
+            <a href="#" id="bookbtn" class="bookbtn">Add Book</a>
+            <a href="#" id="searchbtn" class="bookbtn">Search Book</a>
+            <a href="index.html" id="bookbtn" class="bookbtn">View Shelf</a>
+            <a href="index.html" id="bookbtn" class="bookbtn">To Be Read</a>
+            <a href="index.html" id="bookbtn" class="bookbtn">Past Readings</a>
+            
+        </div>
+    </section>
+
+    <!-- Modal Sectoin-->
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">+</div>
+            <img src="images/book.jpeg" alt="">
+            <form>
+                <input type="text" placeholder="Title">
+                <input type="text" placeholder="Author">
+                <a href="" class="submit">Submit</a>
+            </form>
+        </div>
     </div>
 
-    <div class="list">
-        <button type="submit" class="viewshelfbtn">View Shelf</button>
-        <button onclick="addBook()" class="addbookbtn">Add Book</button>
-        <button onclick="searchBook()" class="searchbookbtn">Search Book</button>
-        <button type="submit" class="viewshelfbtn">To Be Read List</button>
-        <button type="submit" class="viewshelfbtn">Past Readings</button>
+    
+    <div class="search-modal">
+        <div class="searchmodal-content">
+            <div class="close">+</div>
+            <img src="images/book.jpeg" alt="">
+            <form>
+                <input type="text" placeholder="Title">
+                <input type="text" placeholder="Author">
+                <input type="text" placeholder="Genre">
+                <a href="" class="submit">Search</a>
+            </form>
+        </div>
     </div>
+
+    
     
 </body>
 </html>
