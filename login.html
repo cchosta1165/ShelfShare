@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -93,18 +94,17 @@
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
 
-  <div class="view">
-
+  <div class="view">    
   </div>
 
-    <form action="action_page.php" method="post">
+    <form action="login.php" method="post">
         
         <div class="container">
           <label for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
       
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Enter Password" name="password" required>
       
           <button type="submit">Login</button>
           <label>
@@ -115,6 +115,14 @@
         <div class="container" style="background-color:#f1f1f1">
           <button type="button" class="cancelbtn">Cancel</button>
           <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+        <div>
+          <h5>
+          <?php if(isset($_SESSION['message']))
+          {
+            echo $_SESSION['message'];
+          }
+         </h5>
         </div>
       </form>
     
